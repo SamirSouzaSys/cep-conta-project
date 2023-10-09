@@ -1,3 +1,15 @@
+.search{
+  text-align: center;
+}
+
+.redText {
+  color: red;
+}
+h1,h3, input {
+  text-align: center;
+}
+
+/*
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -105,3 +117,4 @@ a {
     color-scheme: dark;
   }
 }
+*/
