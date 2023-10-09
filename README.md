@@ -22,9 +22,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 1. Faça uma tela com formulário para busca de endereços por CEP na API http://viacep.com.br/ws/01001000/json/ usando axios.
 2. Estilize a tela para busca de CEP com CSS próprio (“manual”). 
+4. Implemente um teste unitário para a da busca de endereços por CEP.
+
 
 3. Desenvolva um CRUD RESTful API para a entidade “Conta”.  A entidade precisa ter apenas os atributos “nome” e “descricao”. Use um servidor JSON como o json-server para manter o back-end.
 
-4. Implemente um teste unitário para a da busca de endereços por CEP. 
 
 5. Justifique a estrutura de pastas/arquivos criada.
+
+commands
+- create branchs Main, Develop, Feature/form-search-cep
+- npm install axios
+- npm install --save-dev jest
+- npm install --save-dev ts-jest
+- npx ts-jest config:init
