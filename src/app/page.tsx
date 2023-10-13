@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 import './globals.css'
 import fetchCep from './utils/axiosCep'
-import { AxiosError } from 'axios'
 import { validaCep } from './utils/cep'
 
 type cepType = {
@@ -28,12 +27,10 @@ export default function Home() {
   function getCep(value:string) {    
     fetchCep(cepSearch)
     .then((response) => setCepResult(response.data))
-    .catch((e: boolean) => setCepErro(true)) 
+    .catch(() => setCepErro(true)) 
   }
 
   useEffect(() => {    
-    let result: any
-
     if(validaCep(cepSearch)){
       getCep(cepSearch)
     } else {

@@ -1,7 +1,7 @@
 import {expect, test, jest} from '@jest/globals';
 import {validaCep} from './cep';
-import fectchCep from './axiosCep';
-import { beforeEach, describe } from 'node:test';
+import getConta from './axiosCep';
+import { describe } from 'node:test';
 
 describe('verify cep function - number of characters', () => {
     test('8 - To be OK!', () => {
@@ -9,7 +9,7 @@ describe('verify cep function - number of characters', () => {
     })
     
     test('7 - to be false', () => {
-        expect(validaCep('6506632')).toBe(false)
+        expect(validaCep('65066320')).toBe(false)
     })
 })
 
@@ -26,12 +26,12 @@ const cepType = {
     "uf": "MA"
 }
 
-const fetchCep = jest.fn()
-fetchCep.mockReturnValue(cepType)
+const getConta = jest.fn()
+getConta.mockReturnValue(cepType)
 
 describe('verify fetchCep function', () => {
     test('verify fetchCep', () => {
-        expect(fetchCep('65066320')).toBe(cepType)
+        expect(getConta('65066320')).toBe(cepType)
         // expect(fetchCep('6506632')).toBe(false)
     })
 })
