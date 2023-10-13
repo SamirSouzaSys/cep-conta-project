@@ -1,0 +1,24 @@
+{
+  "conta": [
+    {
+      "id": 1,
+      "nome": "nome pessoa 1",
+      "descricao": "descricao da pessoa 1"
+    },
+    {
+      "id": 3,
+      "nome": "nome pessoa 3",
+      "descricao": "descricao da pessoa 3"
+    },
+    {
+      "id": 5,
+      "nome": "nome pessoa 5",
+      "descricao": "descricao da pessoa 5"
+    },
+    {
+      "id": 7,
+      "nome": "nome pessoa 7",
+      "descricao": "descricao da pessoa 7"
+    }
+  ]
+}

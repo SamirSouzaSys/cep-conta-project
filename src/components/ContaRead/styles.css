@@ -1,0 +1,14 @@
+.divRow {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+.id, .nome, .descricao {
+    border: solid;
+    border-width: 1px ;
+    text-align: center;
+    min-width: 50px;
+}
+.nome, .descricao {
+    min-width: 250px;
+}
